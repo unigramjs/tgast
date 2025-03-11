@@ -1,0 +1,48 @@
+{
+	"name": "tgast",
+	"description": "Telegram Abstract Syntax Tree format.",
+	"version": "1.0.0",
+	"module": "index.ts",
+	"type": "module",
+	"license": "MIT",
+	"private": false,
+	"keywords": [
+		"telegram",
+		"bot",
+		"api",
+		"entity",
+		"entities",
+		"ast",
+		"syntax",
+		"tree",
+		"unified",
+		"unifiedjs",
+		"unified.js",
+		"unist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/quadratz/tgast.git"
+	},
+	"bugs": {
+		"url": "https://github.com/quadratz/tgast/issues"
+	},
+	"scripts": {
+		"check": "bunx biome check",
+		"fmt": "bunx biome format --write",
+		"lint": "bunx biome check --write",
+		"jsr": "bunx jsr"
+	},
+	"dependencies": {
+		"@grammyjs/types": "^3.19.0",
+		"@types/unist": "^3.0.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"files": ["src/**/*", "LICENSE", "README.md", "index.ts"]
+}

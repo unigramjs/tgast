@@ -1,0 +1,8 @@
+{
+	"name": "@qz/tgast",
+	"version": "1.0.0",
+	"exports": "./index.ts",
+	"publish": {
+		"include": ["LICENSE", "README.md", "index.ts", "src/**/*"]
+	}
+}
