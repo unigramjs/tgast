@@ -10,7 +10,6 @@ It's built using the **[unist][github-unist]** specification, making it easy
 to work with and extend.
 
 For released versions, see [releases][github-tgast-releases].
-The current release is [`1.0.0`][github-tgast-release].
 
 ## Contents
 
@@ -1318,7 +1317,6 @@ See [§ _Glossary_ in `syntax-tree/unist`][github-unist-glossary].
 
 [abstract-syntax-tree]: https://unifiedjs.com/learn/guide/introduction-to-syntax-trees/
 [github-regram]: https://github.com/quadratz/regram
-[github-tgast-release]: https://github.com/quadratz/tgast/releases/tag/1.0.0
 [github-tgast-releases]: https://github.com/quadratz/tgast/releases
 [github-unist]: https://github.com/syntax-tree/unist
 [github-unist-glossary]: https://github.com/syntax-tree/unist#glossary
