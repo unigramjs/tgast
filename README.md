@@ -57,27 +57,10 @@ for processing Telegram message content.
 
 ## Installation
 
-If you are using TypeScript, you can directly use the tgast types defined
-in the TypeScript files. To make them available in your project, install
-the package using your preferred package manager:
+If you are using TypeScript, you can use the tgast types by installing them
+with npm:
 
 ```sh
-# deno
-deno add -D jsr:@qz/tgast
-
-# bun
-bunx jsr -D add @qz/tgast
-
-# pnpm
-pnpm dlx -D jsr add @qz/tgast
-
-# yarn
-yarn dlx -D jsr add @qz/tgast
-
-# npm jsr
-npx jsr add -D @qz/tgast
-
-# npm
 npm add -D tgast
 ```
 
