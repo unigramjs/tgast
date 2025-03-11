@@ -43,5 +43,5 @@
 	"peerDependencies": {
 		"typescript": "^5"
 	},
-	"files": ["src/**/*", "LICENSE", "README.md", "index.ts"]
+	"files": ["CHANGELOG.md", "LICENSE", "README.md", "src/**/*", "index.ts"]
 }
