@@ -19,3 +19,4 @@ export * from "./src/block_content.type.ts";
 export * from "./src/phrasing_content.type.ts";
 export * from "./src/root.type.ts";
 export * from "./src/root_content.type.ts";
+export type { User } from "@grammyjs/types";
