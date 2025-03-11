@@ -4,10 +4,11 @@
 
 ---
 
-**tgast** provides a way to represent [Telegram message entities][telegram-message-entity]
-as a structured format called an **[Abstract Syntax Tree (AST)][abstract-syntax-tree]**.
-It's built using the **[unist][github-unist]** specification, making it easy
-to work with and extend.
+**tgast** provides a way to represent
+[Telegram message entities][telegram-message-entity] as a structured format
+called an **[Abstract Syntax Tree (AST)][abstract-syntax-tree]**. It's built
+using the **[unist][github-unist]** specification, making it easy to work with
+and extend.
 
 For released versions, see [releases][github-tgast-releases].
 
@@ -43,9 +44,10 @@ For released versions, see [releases][github-tgast-releases].
 
 ## Introduction
 
-tgast is a specification for representing [Telegram message entities][telegram-message-entity]
-as an [Abstract Syntax Tree (AST)][abstract-syntax-tree].
-It was initially created for the [regram][github-regram] project.
+tgast is a specification for representing
+[Telegram message entities][telegram-message-entity] as an
+[Abstract Syntax Tree (AST)][abstract-syntax-tree]. It was initially created for
+the [regram][github-regram] project.
 
 ### Where this specification fits
 
@@ -57,8 +59,8 @@ for processing Telegram message content.
 
 ## Installation
 
-If you are using TypeScript, you can use the tgast types by installing them
-with npm:
+If you are using TypeScript, you can use the tgast types by installing them with
+npm:
 
 ```sh
 npm add -D tgast
@@ -148,8 +150,8 @@ interface Bold extends Parent {
 }
 ```
 
-**Bold** ([type reference][bold-type]): Telegram bold text.
-Represents `bold` entities in Telegram messages.
+**Bold** ([type reference][bold-type]): Telegram bold text. Represents `bold`
+entities in Telegram messages.
 
 Example:
 
@@ -273,8 +275,8 @@ interface Cashtag extends Literal {
 }
 ```
 
-**Cashtag** ([type reference][cashtag-type]): Telegram cashtag.
-Represents `cashtag` entities in Telegram messages.
+**Cashtag** ([type reference][cashtag-type]): Telegram cashtag. Represents
+`cashtag` entities in Telegram messages.
 
 Example:
 
@@ -327,8 +329,8 @@ interface Code extends Literal {
 }
 ```
 
-**Code** ([type reference][code-type]): Telegram monowidth string.
-Represents `code` entities in Telegram messages.
+**Code** ([type reference][code-type]): Telegram monowidth string. Represents
+`code` entities in Telegram messages.
 
 Example:
 
@@ -438,8 +440,8 @@ interface Email extends Literal {
 }
 ```
 
-**Email** ([type reference][email-type]): Telegram email address.
-Represents `email` entities in Telegram messages.
+**Email** ([type reference][email-type]): Telegram email address. Represents
+`email` entities in Telegram messages.
 
 Example:
 
@@ -492,7 +494,9 @@ interface ExpandableBlockquote extends Parent {
 }
 ```
 
-**ExpandableBlockquote** ([type reference][expandable-blockquote-type]): Telegram expandable blockquote. Represents `expandable_blockquote` entities in Telegram messages.
+**ExpandableBlockquote** ([type reference][expandable-blockquote-type]):
+Telegram expandable blockquote. Represents `expandable_blockquote` entities in
+Telegram messages.
 
 Example:
 
@@ -562,8 +566,8 @@ interface Hashtag extends Literal {
 }
 ```
 
-**Hashtag** ([type reference][hashtag-type]): Telegram hashtag.
-Represents `hashtag` entities in Telegram messages.
+**Hashtag** ([type reference][hashtag-type]): Telegram hashtag. Represents
+`hashtag` entities in Telegram messages.
 
 Example:
 
@@ -616,8 +620,8 @@ interface Italic extends Parent {
 }
 ```
 
-**Italic** ([type reference][italic-type]): Telegram italic text.
-Represents `italic` entities in Telegram messages.
+**Italic** ([type reference][italic-type]): Telegram italic text. Represents
+`italic` entities in Telegram messages.
 
 Example:
 
@@ -687,8 +691,8 @@ interface Mention extends Literal {
 }
 ```
 
-**Mention** ([type reference][mention-type]): Telegram mention.
-Represents `mention` entities in Telegram messages.
+**Mention** ([type reference][mention-type]): Telegram mention. Represents
+`mention` entities in Telegram messages.
 
 Example:
 
@@ -796,8 +800,8 @@ interface Pre extends Literal {
 }
 ```
 
-**Pre** ([type reference][pre-type]): Telegram monowidth block.
-Represents `pre` entities in Telegram messages.
+**Pre** ([type reference][pre-type]): Telegram monowidth block. Represents `pre`
+entities in Telegram messages.
 
 Example:
 
@@ -993,8 +997,8 @@ interface Text extends Literal {
 }
 ```
 
-**Text** ([type reference][text-type]): Telegram plain text.
-Represents plain text content in Telegram messages.
+**Text** ([type reference][text-type]): Telegram plain text. Represents plain
+text content in Telegram messages.
 
 Example:
 
@@ -1099,8 +1103,8 @@ interface TextMention extends Literal {
 ```
 
 **TextMention** ([type reference][text-mention-type]): Telegram mentions for
-users without usernames. Represents `text_mention` entities in
-Telegram messages.
+users without usernames. Represents `text_mention` entities in Telegram
+messages.
 
 Example:
 
@@ -1236,8 +1240,8 @@ interface Url extends Literal {
 }
 ```
 
-**Url** ([type reference][url-type]): Telegram URL. Represents `url` entities
-in Telegram messages.
+**Url** ([type reference][url-type]): Telegram URL. Represents `url` entities in
+Telegram messages.
 
 Example:
 
