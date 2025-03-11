@@ -1,7 +1,7 @@
 {
 	"name": "tgast",
 	"description": "Telegram Abstract Syntax Tree format.",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"module": "index.ts",
 	"type": "module",
 	"license": "MIT",
@@ -30,8 +30,7 @@
 	"scripts": {
 		"check": "bunx biome check",
 		"fmt": "bunx biome format --write",
-		"lint": "bunx biome check --write",
-		"jsr": "bunx jsr"
+		"lint": "bunx biome check --write"
 	},
 	"dependencies": {
 		"@grammyjs/types": "^3.19.0",
