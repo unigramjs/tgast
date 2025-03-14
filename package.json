@@ -38,7 +38,7 @@
   },
   "scripts": {
     "check": "deno fmt --check && deno lint",
-    "check:publish": "deno task check && deno publish --dry-run --allow-dirty && npm publish --dry-run --allow-dirty",
-    "liftoff": "deno task check && deno publish && npm publish"
+    "check:publish": "deno task check && deno publish --dry-run --allow-dirty && npm publish --provenance --access public --dry-run --allow-dirty",
+    "liftoff": "deno task check && deno publish && npm publish --provenance --access public"
   }
 }
