@@ -1,0 +1,44 @@
+{
+  "name": "tgast",
+  "description": "Telegram Abstract Syntax Tree format.",
+  "version": "1.2.1",
+  "license": "MIT",
+  "keywords": [
+    "telegram",
+    "bot",
+    "api",
+    "entity",
+    "entities",
+    "ast",
+    "syntax",
+    "tree",
+    "unified",
+    "unifiedjs",
+    "unified.js",
+    "unist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quadratz/tgast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quadratz/tgast/issues"
+  },
+  "files": [
+    "src",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "main": "",
+  "types": "src/mod.ts",
+  "dependencies": {
+    "@types/unist": "^3.0.3"
+  },
+  "scripts": {
+    "check": "deno fmt --check && deno lint",
+    "check:publish": "deno task check && deno publish --dry-run --allow-dirty && npm publish --dry-run --allow-dirty",
+    "liftoff": "deno task check && deno publish && npm publish"
+  }
+}

@@ -1,7 +1,7 @@
 // Telegram Abstract Syntax Tree (tgast)
 // https://github.com/quadratz/tgast
 
-import type { User } from "@grammyjs/types";
+import type { User } from "./message.type.ts";
 import type { Data, Literal, Parent } from "./abstract.type.ts";
 import type { PhrasingContent } from "./phrasing_content.type.ts";
 
