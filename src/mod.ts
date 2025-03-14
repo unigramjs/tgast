@@ -14,9 +14,9 @@
  * [unified]: https://github.com/unifiedjs/unified
  * [unist]: https://github.com/syntax-tree/unist
  */
-export * from "./src/abstract.type.ts";
-export * from "./src/block_content.type.ts";
-export * from "./src/phrasing_content.type.ts";
-export * from "./src/root.type.ts";
-export * from "./src/root_content.type.ts";
+export * from "./abstract.type.ts";
+export * from "./block_content.type.ts";
+export * from "./phrasing_content.type.ts";
+export * from "./root.type.ts";
+export * from "./root_content.type.ts";
 export type { User } from "@grammyjs/types";
