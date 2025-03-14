@@ -7,7 +7,8 @@
       "src/",
       "deno.lock",
       "LICENSE",
-      "README.md"
+      "README.md",
+      "package.json"
     ]
   }
 }
