@@ -22,7 +22,7 @@ await build({
     // package.json properties
     name: "tgast",
     description: "Telegram Abstract Syntax Tree format.",
-    version: "1.2.0-dev.1",
+    version: "1.2.0",
     license: "MIT",
     keywords: [
       "telegram",
