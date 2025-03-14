@@ -1,0 +1,25 @@
+{
+  "name": "@qz/tgast",
+  "version": "1.2.0-dev.1",
+  "exports": "./src/mod.ts",
+  "tasks": {
+    "check": "deno fmt --check && deno lint",
+    "check:publish": "deno task publish:jsr --dry-run --allow-dirty && deno task publish:npm --dry-run",
+    "publish:jsr": "deno task check && deno publish",
+    "publish:npm": "deno task check && deno -A scripts/build_npm.ts && cd build/npm && npm publish"
+  },
+  "imports": {
+    "@deno/dnt": "jsr:@deno/dnt@^0.41.3",
+    "@grammyjs/types": "npm:@grammyjs/types@^3.19.0",
+    "unist": "npm:@types/unist@^3.0.3"
+  },
+  "publish": {
+    "include": [
+      "src/",
+      "deno.jsonc",
+      "deno.lock",
+      "LICENSE",
+      "README.md"
+    ]
+  }
+}
