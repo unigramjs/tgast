@@ -14,7 +14,7 @@ and this project adheres to
 
 ## [1.2.1] - 2025-03-14
 
-### Added
+### Changed
 
 - Optimize package size
 
