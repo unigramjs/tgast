@@ -24,21 +24,24 @@
   "bugs": {
     "url": "https://github.com/quadratz/tgast/issues"
   },
+  "homepage": "https://github.com/quadratz/tgast",
   "files": [
-    "src",
+    "src/**/*.d.ts",
+    "src/mod.js",
     "package.json",
     "README.md",
     "CHANGELOG.md",
-    "LICENSE"
+    "LICENSE",
+    "deno.lock"
   ],
-  "main": "",
-  "types": "src/mod.ts",
+  "main": "src/mod.js",
+  "types": "src/mod.d.ts",
   "dependencies": {
     "@types/unist": "^3.0.3"
   },
-  "scripts": {
-    "check": "deno fmt --check && deno lint",
-    "check:publish": "deno task check && deno publish --dry-run --allow-dirty && npm publish --provenance --access public --dry-run --allow-dirty",
-    "liftoff": "deno task check && deno publish && npm publish --provenance --access public"
+  "author": {
+    "name": "Quadratz",
+    "email": "quadratz@proton.me",
+    "url": "https://t.me/quadratz"
   }
 }
