@@ -1,6 +1,6 @@
 {
   "name": "@qz/tgast",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "exports": "./src/mod.ts",
   "tasks": {
     "check": "deno fmt --check && deno lint && deno -ERW=. npm:typescript/tsc",
