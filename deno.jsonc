@@ -22,5 +22,8 @@
   "imports": {
     "unist": "npm:@types/unist@^3.0.3"
   },
-  "nodeModulesDir": "auto"
+  "nodeModulesDir": "auto",
+  "lock": {
+    "frozen": true
+  }
 }
