@@ -14,13 +14,13 @@ For released versions, see [releases][github-tgast-releases].
 
 ## Contents
 
-* [Introduction](#introduction)
-  * [Where this specification fits](#where-this-specification-fits)
-* [Installation](#installation)
-* [Nodes](#nodes)
-* [Glossary](#glossary)
-* [References](#references)
-* [Related](#related)
+- [Introduction](#introduction)
+  - [Where this specification fits](#where-this-specification-fits)
+- [Installation](#installation)
+- [Nodes](#nodes)
+- [Glossary](#glossary)
+- [References](#references)
+- [Related](#related)
 
 ## Introduction
 
@@ -64,26 +64,45 @@ npm add -D tgast
 
 ## Nodes
 
-* [Blockquote][blockquote-type]: Telegram block quotation. Represents `blockquote` entities in Telegram messages.
-* [Bold][bold-type]: Telegram bold text. Represents `bold`entities in Telegram messages.
-* [BotCommand][bot-command-type]: Telegram bot command. Represents `bot_command` entities in Telegram messages.
-* [Cashtag][cashtag-type]: Telegram cashtag. Represents `cashtag` entities in Telegram messages.
-* [Code][code-type]: Telegram monowidth string. Represents `code` entities in Telegram messages.
-* [CustomEmoji][custom-emoji-type]: Telegram custom emoji. Represents `custom_emoji` entities in Telegram messages.
-* [Email][email-type]: Telegram email address. Represents `email` entities in Telegram messages.
-* [ExpandableBlockquote][expandable-blockquote-type]: Telegram expandable blockquote. Represents `expandable_blockquote` entities in Telegram messages.
-* [Hashtag][hashtag-type]: Telegram hashtag. Represents `hashtag` entities in Telegram messages.
-* [Italic][italic-type]: Telegram italic text. Represents `italic` entities in Telegram messages.
-* [Mention][mention-type]: Telegram mention. Represents `mention` entities in Telegram messages.
-* [PhoneNumber][phone-number-type]: Telegram phone number. Represents `phone_number` entities in Telegram messages.
-* [Pre][pre-type]: Telegram monowidth block. Represents `pre` entities in Telegram messages.
-* [Spoiler][spoiler-type]: Telegram spoiler message. Represents `spoiler` entities in Telegram messages.
-* [Strikethrough][strikethrough-type]: Telegram strikethrough text. Represents `strikethrough` entities in Telegram messages.
-* [Text][text-type]: Telegram plain text. Represents plain text content in Telegram messages.
-* [TextLink][text-link-type]: Telegram clickable text URL. Represents `text_link` entities in Telegram messages.
-* [TextMention][text-mention-type]: Telegram mentions for users without usernames. Represents `text_mention` entities in Telegram messages.
-* [Underline][underline-type]: Telegram underline text. Represents `underline` entities in Telegram messages.
-* [Url][url-type]: Telegram URL. Represents `url` entities in Telegram messages.
+- [Blockquote][blockquote-type]: Telegram block quotation. Represents
+  `blockquote` entities in Telegram messages.
+- [Bold][bold-type]: Telegram bold text. Represents `bold`entities in Telegram
+  messages.
+- [BotCommand][bot-command-type]: Telegram bot command. Represents `bot_command`
+  entities in Telegram messages.
+- [Cashtag][cashtag-type]: Telegram cashtag. Represents `cashtag` entities in
+  Telegram messages.
+- [Code][code-type]: Telegram monowidth string. Represents `code` entities in
+  Telegram messages.
+- [CustomEmoji][custom-emoji-type]: Telegram custom emoji. Represents
+  `custom_emoji` entities in Telegram messages.
+- [Email][email-type]: Telegram email address. Represents `email` entities in
+  Telegram messages.
+- [ExpandableBlockquote][expandable-blockquote-type]: Telegram expandable
+  blockquote. Represents `expandable_blockquote` entities in Telegram messages.
+- [Hashtag][hashtag-type]: Telegram hashtag. Represents `hashtag` entities in
+  Telegram messages.
+- [Italic][italic-type]: Telegram italic text. Represents `italic` entities in
+  Telegram messages.
+- [Mention][mention-type]: Telegram mention. Represents `mention` entities in
+  Telegram messages.
+- [PhoneNumber][phone-number-type]: Telegram phone number. Represents
+  `phone_number` entities in Telegram messages.
+- [Pre][pre-type]: Telegram monowidth block. Represents `pre` entities in
+  Telegram messages.
+- [Spoiler][spoiler-type]: Telegram spoiler message. Represents `spoiler`
+  entities in Telegram messages.
+- [Strikethrough][strikethrough-type]: Telegram strikethrough text. Represents
+  `strikethrough` entities in Telegram messages.
+- [Text][text-type]: Telegram plain text. Represents plain text content in
+  Telegram messages.
+- [TextLink][text-link-type]: Telegram clickable text URL. Represents
+  `text_link` entities in Telegram messages.
+- [TextMention][text-mention-type]: Telegram mentions for users without
+  usernames. Represents `text_mention` entities in Telegram messages.
+- [Underline][underline-type]: Telegram underline text. Represents `underline`
+  entities in Telegram messages.
+- [Url][url-type]: Telegram URL. Represents `url` entities in Telegram messages.
 
 ## Glossary
 
@@ -120,7 +139,7 @@ See [§ _Glossary_ in `syntax-tree/unist`][github-unist-glossary].
 [cashtag-type]: https://github.com/quadratz/tgast/wiki/Node:-Cashtag
 [code-type]: https://github.com/quadratz/tgast/wiki/Node:-Code
 [custom-emoji-type]: https://github.com/quadratz/tgast/wiki/Node:-CustomEmoji
-[email-type]:https://github.com/quadratz/tgast/wiki/Node:-Email
+[email-type]: https://github.com/quadratz/tgast/wiki/Node:-Email
 [expandable-blockquote-type]: https://github.com/quadratz/tgast/wiki/Node:-ExpandableBlockquote
 [hashtag-type]: https://github.com/quadratz/tgast/wiki/Node:-Hashtag
 [italic-type]: https://github.com/quadratz/tgast/wiki/Node:-Italic

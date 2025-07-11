@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.4] - 2025-07-11
+
+### Changed
+
+- Move types documentation to GitHub wiki. This change reduces the size of the
+  README file and decreases clutter.
+
 ## [1.2.3] - 2025-03-17
 
 ### Fixed
@@ -66,6 +73,7 @@ and this project adheres to
 
 - Initial release.
 
+[1.2.4]: https://github.com/quadratz/tgast/compare/v1.2.3...v1.2.4
 [1.2.3]: https://github.com/quadratz/tgast/compare/v1.2.2...v1.2.3
 [1.2.2]: https://github.com/quadratz/tgast/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/quadratz/tgast/compare/v1.2.0...v1.2.1
