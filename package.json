@@ -29,7 +29,6 @@
     "src/**/*.d.ts",
     "src/mod.js",
     "CHANGELOG.md",
-    "package-lock.json",
     "package.json",
     "LICENSE",
     "README.md"
