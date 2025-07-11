@@ -66,8 +66,8 @@ npm add -D tgast
 
 * [Blockquote][blockquote-type]: Telegram block quotation. Represents `blockquote` entities in Telegram messages.
 * [Bold][bold-type]: Telegram bold text. Represents `bold`entities in Telegram messages.
-* [Bold][bold-type]: Telegram bot command. Represents `bot_command` entities in Telegram messages.
-* [Bold][bold-type]: Telegram cashtag. Represents `cashtag` entities in Telegram messages.
+* [BotCommand][bot-command-type]: Telegram bot command. Represents `bot_command` entities in Telegram messages.
+* [Cashtag][cashtag-type]: Telegram cashtag. Represents `cashtag` entities in Telegram messages.
 * [Code][code-type]: Telegram monowidth string. Represents `code` entities in Telegram messages.
 * [CustomEmoji][custom-emoji-type]: Telegram custom emoji. Represents `custom_emoji` entities in Telegram messages.
 * [Email][email-type]: Telegram email address. Represents `email` entities in Telegram messages.
