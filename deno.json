@@ -11,10 +11,11 @@
     "include": [
       "src/mod.js",
       "src/**/*.ts",
+      "CHANGELOG.md",
+      "deno.json",
       "deno.lock",
       "LICENSE",
-      "README.md",
-      "deno.json"
+      "README.md"
     ],
     "exclude": ["src/**/*.d.ts"]
   },

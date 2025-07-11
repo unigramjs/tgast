@@ -28,11 +28,11 @@
   "files": [
     "src/**/*.d.ts",
     "src/mod.js",
-    "package.json",
-    "README.md",
     "CHANGELOG.md",
+    "package-lock.json",
+    "package.json",
     "LICENSE",
-    "deno.lock"
+    "README.md"
   ],
   "main": "src/mod.js",
   "types": "src/mod.d.ts",
