@@ -15,7 +15,6 @@ and this project adheres to
 ### Changed
 
 - Made major internal code changes, which may break compatibility. ([#1])
-
 - The npm `next` tag will now always point to the newest available version.
   ([#7])
 
