@@ -60,13 +60,30 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.x
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 24.x
           registry-url: https://registry.npmjs.org
 
+      - name: Cache pnpm store and node_modules
+        id: pnpm-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.pnpm-store
+            node_modules
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
       - name: Install dependencies
+        if: steps.pnpm-cache.outputs.cache-hit != 'true'
         run: pnpm install
 
       - name: Publish
