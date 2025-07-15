@@ -43,19 +43,19 @@ You can use tgast by installing it from [npm][npm-tgast]:
 
 ```sh
 # deno
-deno add -D npm:tgast # npm
+deno add -D npm:tgast
 
 # bun
-bun add -D tgast # npm
+bun add -D tgast
 
 # pnpm
-pnpm add -D tgast # npm
+pnpm add -D tgast
 
 # yarn
-yarn add -D tgast # npm
+yarn add -D tgast
 
 # npm
-npm install -D tgast # npm
+npm install -D tgast
 ```
 
 ## Nodes
