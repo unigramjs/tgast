@@ -39,8 +39,7 @@
 		"check": "biome check",
 		"fix": "biome check --fix",
 		"build": "tsc -p . && npm run fix",
-		"publish:npm": "pnpm publish --no-git-checks --provenance --access public",
-		"publish:jsr": "jsr publish --allow-dirty"
+		"publish": "pnpm publish --no-git-checks --provenance --access public"
 	},
 	"dependencies": {
 		"@types/unist": "^3.0.3"
@@ -52,7 +51,6 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.1.1",
-		"jsr": "^0.13.5",
 		"typescript": "^5.8.3"
 	}
 }

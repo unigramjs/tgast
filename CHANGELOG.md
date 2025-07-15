@@ -18,6 +18,10 @@ and this project adheres to
 
 - Made major internal code changes, which may break compatibility. ([#1])
 
+### Removed
+
+- Drop support for JSR. ([#3])
+
 ## [1.2.5] - 2025-07-11
 
 ### Added
@@ -113,3 +117,4 @@ and this project adheres to
 [1.0.1]: https://github.com/quadratz/tgast/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/quadratz/tgast/releases/tag/v1.0.0
 [#1]: https://github.com/quadratz/tgast/pull/1
+[#3]: https://github.com/quadratz/tgast/pull/3
