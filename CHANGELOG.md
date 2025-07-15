@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [2.0.0-alpha.1] - 2025-07-15
+
 ### Added
 
 - `.dts` files for npm.
@@ -98,7 +100,8 @@ and this project adheres to
 
 - Initial release.
 
-[unreleased]: https://github.com/quadratz/tgast/compare/v1.2.5...HEAD
+[unreleased]: https://github.com/quadratz/tgast/compare/v2.0.0-alpha.1...HEAD
+[2.0.0-alpha.1]: https://github.com/quadratz/tgast/compare/v1.2.5...v2.0.0-alpha.1
 [1.2.5]: https://github.com/quadratz/tgast/compare/v1.2.4...v1.2.5
 [1.2.4]: https://github.com/quadratz/tgast/compare/v1.2.3...v1.2.4
 [1.2.3]: https://github.com/quadratz/tgast/compare/v1.2.2...v1.2.3
