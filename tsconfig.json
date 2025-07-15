@@ -1,17 +1,18 @@
 {
-  "include": ["src/**/*.ts"],
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "skipLibCheck": true, // speed
-    "strict": true,
-    "target": "ES2020",
-    "emitDeclarationOnly": true,
-    "forceConsistentCasingInFileNames": true,
-    "newLine": "lf",
-    "allowImportingTsExtensions": true
-  }
+	"include": ["src/**/*.ts"],
+	"compilerOptions": {
+		// Tells TypeScript to read JS files, as normally they are ignored as
+		// source files.
+		"allowJs": true,
+		// Generate d.ts files.
+		"declaration": true,
+		"moduleResolution": "node",
+		"skipLibCheck": true, // speed
+		"strict": true,
+		"target": "esnext",
+		// This compiler run should only output d.ts files.
+		"emitDeclarationOnly": true,
+		"forceConsistentCasingInFileNames": true,
+		"newLine": "lf"
+	}
 }

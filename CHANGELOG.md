@@ -6,9 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+## [2.0.0-alpha.1] - 2025-07-15
+
+### Added
+
+- `.dts` files for npm.
+
+### Changed
+
+- Made major internal code changes, which may break compatibility. ([#1])
+
 ## [1.2.5] - 2025-07-11
 
-### Add
+### Added
 
 - `CHANGELOG.md` for JSR.
 - `package-lock.json` for npm.
@@ -88,6 +100,8 @@ and this project adheres to
 
 - Initial release.
 
+[unreleased]: https://github.com/quadratz/tgast/compare/v2.0.0-alpha.1...HEAD
+[2.0.0-alpha.1]: https://github.com/quadratz/tgast/compare/v1.2.5...v2.0.0-alpha.1
 [1.2.5]: https://github.com/quadratz/tgast/compare/v1.2.4...v1.2.5
 [1.2.4]: https://github.com/quadratz/tgast/compare/v1.2.3...v1.2.4
 [1.2.3]: https://github.com/quadratz/tgast/compare/v1.2.2...v1.2.3
@@ -98,3 +112,4 @@ and this project adheres to
 [1.0.2]: https://github.com/quadratz/tgast/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/quadratz/tgast/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/quadratz/tgast/releases/tag/v1.0.0
+[#1]: https://github.com/quadratz/tgast/pull/1

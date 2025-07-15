@@ -1,47 +1,58 @@
 {
-  "name": "tgast",
-  "description": "Telegram Abstract Syntax Tree format.",
-  "version": "1.2.5",
-  "license": "MIT",
-  "keywords": [
-    "telegram",
-    "bot",
-    "api",
-    "entity",
-    "entities",
-    "ast",
-    "syntax",
-    "tree",
-    "unified",
-    "unifiedjs",
-    "unified.js",
-    "unist"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/quadratz/tgast.git"
-  },
-  "bugs": {
-    "url": "https://github.com/quadratz/tgast/issues"
-  },
-  "homepage": "https://github.com/quadratz/tgast",
-  "files": [
-    "src/**/*.d.ts",
-    "src/mod.js",
-    "CHANGELOG.md",
-    "package-lock.json",
-    "package.json",
-    "LICENSE",
-    "README.md"
-  ],
-  "main": "src/mod.js",
-  "types": "src/mod.d.ts",
-  "dependencies": {
-    "@types/unist": "^3.0.3"
-  },
-  "author": {
-    "name": "Quadratz",
-    "email": "quadratz@proton.me",
-    "url": "https://t.me/quadratz"
-  }
+	"name": "tgast",
+	"description": "Telegram Abstract Syntax Tree format.",
+	"version": "2.0.0-alpha.1",
+	"license": "MIT",
+	"keywords": [
+		"telegram",
+		"bot",
+		"api",
+		"entity",
+		"entities",
+		"ast",
+		"syntax",
+		"tree",
+		"unified",
+		"unifiedjs",
+		"unified.js",
+		"unist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/quadratz/tgast.git"
+	},
+	"bugs": {
+		"url": "https://github.com/quadratz/tgast/issues"
+	},
+	"homepage": "https://github.com/quadratz/tgast",
+	"files": [
+		"src/**/*.d.ts",
+		"src/index.js",
+		"CHANGELOG.md",
+		"LICENSE",
+		"package.json",
+		"README.md"
+	],
+	"main": "src/index.js",
+	"types": "src/index.d.ts",
+	"scripts": {
+		"check": "biome check",
+		"fix": "biome check --fix",
+		"build": "tsc -p . && npm run fix",
+		"publish:npm": "pnpm publish --provenance --access public",
+		"publish:jsr": "jsr publish --allow-dirty"
+	},
+	"dependencies": {
+		"@types/unist": "^3.0.3"
+	},
+	"author": {
+		"name": "Quadratz",
+		"email": "quadratz@proton.me",
+		"url": "https://t.me/quadratz"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.1.1",
+		"jsr": "^0.13.5",
+		"typescript": "^5.8.3"
+	}
 }
