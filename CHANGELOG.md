@@ -8,13 +8,18 @@ and this project adheres to
 
 ## [Unreleased]
 
-### Removed
+### Added
 
-- `deno.lock` and `package-lock.json` from publish files
+- Added proper `.dts` files for npm.
+
+### Changed
+
+- Made major internal code changes, which may break compatibility.
+- Renamed some files.
 
 ## [1.2.5] - 2025-07-11
 
-### Add
+### Added
 
 - `CHANGELOG.md` for JSR.
 - `package-lock.json` for npm.
