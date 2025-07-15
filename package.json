@@ -39,7 +39,7 @@
 		"check": "biome check",
 		"fix": "biome check --fix",
 		"build": "tsc -p . && npm run fix",
-		"publish:npm": "pnpm publish --provenance --access public",
+		"publish:npm": "pnpm publish --no-git-checks --provenance --access public",
 		"publish:jsr": "jsr publish --allow-dirty"
 	},
 	"dependencies": {
