@@ -1,7 +1,7 @@
 {
 	"name": "tgast",
 	"description": "Telegram Abstract Syntax Tree format.",
-	"version": "2.0.0-alpha.1",
+	"version": "2.0.0-alpha.2",
 	"license": "MIT",
 	"keywords": [
 		"telegram",

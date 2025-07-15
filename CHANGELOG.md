@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [2.0.0-alpha.2] - 2025-07-15
+
+### Removed
+
+- Drop support for JSR. ([#3])
+
 ## [2.0.0-alpha.1] - 2025-07-15
 
 ### Added
@@ -17,10 +23,6 @@ and this project adheres to
 ### Changed
 
 - Made major internal code changes, which may break compatibility. ([#1])
-
-### Removed
-
-- Drop support for JSR. ([#3])
 
 ## [1.2.5] - 2025-07-11
 
@@ -105,6 +107,7 @@ and this project adheres to
 - Initial release.
 
 [unreleased]: https://github.com/quadratz/tgast/compare/v2.0.0-alpha.1...HEAD
+[2.0.0-alpha.2]: https://github.com/quadratz/tgast/compare/v2.0.0-alpha.1...v2.0.0-alpha.2
 [2.0.0-alpha.1]: https://github.com/quadratz/tgast/compare/v1.2.5...v2.0.0-alpha.1
 [1.2.5]: https://github.com/quadratz/tgast/compare/v1.2.4...v1.2.5
 [1.2.4]: https://github.com/quadratz/tgast/compare/v1.2.3...v1.2.4
