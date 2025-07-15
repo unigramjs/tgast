@@ -38,7 +38,7 @@
 	"scripts": {
 		"check": "biome check",
 		"fix": "biome check --fix",
-		"build": "tsc -p . && npm run fix",
+		"build": "tsc -p . && pnpm run fix",
 		"publish": "pnpm publish --no-git-checks --provenance --access public"
 	},
 	"dependencies": {
