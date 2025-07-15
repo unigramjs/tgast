@@ -39,28 +39,22 @@ for processing Telegram message content.
 
 ## Installation
 
-You can use tgast by installing it either from [JSR][jsr-tgast] or
-[npm][npm-tgast]:
+You can use tgast by installing it from [npm][npm-tgast]:
 
 ```sh
 # deno
-deno add -D jsr:@qz/tgast # jsr
 deno add -D npm:tgast # npm
 
 # bun
-bunx jsr add -D @qz/tgast # jsr
 bun add -D tgast # npm
 
 # pnpm
-pnpm dlx jsr add -D @qz/tgast # jsr
 pnpm add -D tgast # npm
 
 # yarn
-yarn dlx jsr add -D @qz/tgast # jsr
 yarn add -D tgast # npm
 
 # npm
-npx jsr add -D @qz/tgast # jsr
 npm install -D tgast # npm
 ```
 
@@ -68,7 +62,7 @@ npm install -D tgast # npm
 
 - [Blockquote][blockquote-type]: Telegram block quotation. Represents
   `blockquote` entities in Telegram messages.
-- [Bold][bold-type]: Telegram bold text. Represents `bold`entities in Telegram
+- [Bold][bold-type]: Telegram bold text. Represents `bold` entities in Telegram
   messages.
 - [BotCommand][bot-command-type]: Telegram bot command. Represents `bot_command`
   entities in Telegram messages.
@@ -155,5 +149,4 @@ See [§ _Glossary_ in `syntax-tree/unist`][github-unist-glossary].
 [text-mention-type]: https://github.com/quadratz/tgast/wiki/Node:-TextMention
 [underline-type]: https://github.com/quadratz/tgast/wiki/Node:-Underline
 [url-type]: https://github.com/quadratz/tgast/wiki/Node:-Url
-[jsr-tgast]: https://jsr.io/@qz/tgast
 [npm-tgast]: https://npmjs.com/package/tgast

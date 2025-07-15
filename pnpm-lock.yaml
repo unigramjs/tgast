@@ -15,9 +15,6 @@ importers:
       '@biomejs/biome':
         specifier: 2.1.1
         version: 2.1.1
-      jsr:
-        specifier: ^0.13.5
-        version: 0.13.5
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -80,18 +77,6 @@ packages:
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
 
-  jsr@0.13.5:
-    resolution: {integrity: sha512-qQP20ZcG28pYes7bCq3uuvixl1TL1EpJzwLPfoQadSyWk9j2AID66qhW8+aXpRDRFDvDkXFnONsSRhpnnQAupg==}
-    hasBin: true
-
-  node-stream-zip@1.15.0:
-    resolution: {integrity: sha512-LN4fydt9TqhZhThkZIVQnF9cwjU3qmUH9h78Mx/K7d3VvfRqqwthLwJEUOEL0QPZ0XQmNN7be5Ggit5+4dq3Bw==}
-    engines: {node: '>=0.12.0'}
-
-  semiver@1.1.0:
-    resolution: {integrity: sha512-QNI2ChmuioGC1/xjyYwyZYADILWyW6AmS1UH6gDj/SFUUUS4MBAWs/7mxnkRPc/F4iHezDP+O8t0dO8WHiEOdg==}
-    engines: {node: '>=6'}
-
   typescript@5.8.3:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
@@ -135,14 +120,5 @@ snapshots:
     optional: true
 
   '@types/unist@3.0.3': {}
-
-  jsr@0.13.5:
-    dependencies:
-      node-stream-zip: 1.15.0
-      semiver: 1.1.0
-
-  node-stream-zip@1.15.0: {}
-
-  semiver@1.1.0: {}
 
   typescript@5.8.3: {}
