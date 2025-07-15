@@ -1,5 +1,3 @@
 {
-  "recommendations": [
-    "denoland.vscode-deno"
-  ]
+	"recommendations": ["vivaxy.vscode-conventional-commits", "biomejs.biome"]
 }
