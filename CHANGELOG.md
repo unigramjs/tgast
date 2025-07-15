@@ -10,12 +10,11 @@ and this project adheres to
 
 ### Added
 
-- Added proper `.dts` files for npm.
+- `.dts` files for npm.
 
 ### Changed
 
-- Made major internal code changes, which may break compatibility.
-- Renamed some files.
+- Made major internal code changes, which may break compatibility. ([#1])
 
 ## [1.2.5] - 2025-07-11
 
@@ -99,7 +98,7 @@ and this project adheres to
 
 - Initial release.
 
-[unreleased]: https://github.com/quadratz/tgast/compare/v1.2.4...HEAD
+[unreleased]: https://github.com/quadratz/tgast/compare/v1.2.5...HEAD
 [1.2.5]: https://github.com/quadratz/tgast/compare/v1.2.4...v1.2.5
 [1.2.4]: https://github.com/quadratz/tgast/compare/v1.2.3...v1.2.4
 [1.2.3]: https://github.com/quadratz/tgast/compare/v1.2.2...v1.2.3
@@ -110,3 +109,4 @@ and this project adheres to
 [1.0.2]: https://github.com/quadratz/tgast/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/quadratz/tgast/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/quadratz/tgast/releases/tag/v1.0.0
+[#1]: https://github.com/quadratz/tgast/pull/1
