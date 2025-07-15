@@ -36,6 +36,6 @@ jobs:
         run: pnpm run build
 
       - name: Publish
-        run: pnpm run publish
+        run: pnpm run publish && node ./scripts/push-npm-next-tag.ts
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
