@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
   push:
     tags:
-      - "v*-*"
+      - 'v*-*'
 
 jobs:
-  publish-npm:
+  pre-release:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: pnpm run build
 
-      - name: Publish
-        run: pnpm run publish --tag next
+      - name: Release
+        run: pnpm run release --tag next
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

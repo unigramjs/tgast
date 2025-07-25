@@ -1,59 +1,75 @@
 {
-	"name": "tgast",
-	"description": "Telegram Abstract Syntax Tree format.",
-	"version": "2.0.0",
-	"license": "MIT",
-	"keywords": [
-		"telegram",
-		"bot",
-		"api",
-		"entity",
-		"entities",
-		"ast",
-		"syntax",
-		"tree",
-		"unified",
-		"unifiedjs",
-		"unified.js",
-		"unist"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/quadratz/tgast.git"
-	},
-	"bugs": {
-		"url": "https://github.com/quadratz/tgast/issues"
-	},
-	"homepage": "https://github.com/quadratz/tgast",
-	"files": [
-		"src/**/*.d.ts",
-		"src/index.js",
-		"CHANGELOG.md",
-		"LICENSE",
-		"package.json",
-		"README.md"
-	],
-	"main": "src/index.js",
-	"types": "src/index.d.ts",
-	"scripts": {
-		"check": "biome check",
-		"fix": "biome check --fix",
-		"build": "tsc -p . && npm run fix",
-		"publish": "pnpm publish --no-git-checks --provenance --access public"
-	},
-	"dependencies": {
-		"@types/unist": "^3.0.3"
-	},
-	"author": {
-		"name": "Quadratz",
-		"email": "quadratz@proton.me",
-		"url": "https://t.me/quadratz"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.1.1",
-		"@types/node": "^24.0.14",
-		"@types/semver": "^7.7.0",
-		"semver": "^7.7.2",
-		"typescript": "^5.8.3"
-	}
+  "name": "tgast",
+  "type": "module",
+  "version": "3.0.0-alpha.1",
+  "private": false,
+  "description": "Telegram Abstract Syntax Tree format.",
+  "author": {
+    "name": "Quadratz",
+    "email": "quadratz@proton.me",
+    "url": "https://t.me/quadratz"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/tgast-ecosystem/tgast",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgast-ecosystem/tgast.git"
+  },
+  "bugs": {
+    "email": "quadratz@proton.me",
+    "url": "https://github.com/tgast-ecosystem/tgast/issues"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "api",
+    "entity",
+    "entities",
+    "ast",
+    "syntax",
+    "tree",
+    "unified",
+    "unifiedjs",
+    "unified.js",
+    "unist"
+  ],
+  "exports": {
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "build": "unbuild",
+    "release": "pnpm publish --no-git-checks --provenance --access public"
+  },
+  "dependencies": {
+    "@types/unist": "^3.0.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.19.0",
+    "@types/node": "^24.1.0",
+    "@types/semver": "^7.7.0",
+    "eslint": "^9.31.0",
+    "eslint-plugin-format": "^1.0.1",
+    "semver": "^7.7.2",
+    "typescript": "^5.8.3",
+    "unbuild": "^3.6.0"
+  }
 }

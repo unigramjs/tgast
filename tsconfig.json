@@ -1,18 +1,35 @@
 {
-	"include": ["src/**/*.ts"],
-	"compilerOptions": {
-		// Tells TypeScript to read JS files, as normally they are ignored as
-		// source files.
-		"allowJs": true,
-		// Generate d.ts files.
-		"declaration": true,
-		"moduleResolution": "node",
-		"skipLibCheck": true, // speed
-		"strict": true,
-		"target": "esnext",
-		// This compiler run should only output d.ts files.
-		"emitDeclarationOnly": true,
-		"forceConsistentCasingInFileNames": true,
-		"newLine": "lf"
-	}
+  "compilerOptions": {
+    "target": "esnext",
+    // ### https://tsx.is/typescript#recommendation ###
+    // Treat files as modules even if it doesn't use import/export
+    "moduleDetection": "force",
+    // Ignore module structure
+    "module": "preserve",
+    // Allow JSON modules to be imported
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    // Allow JS files to be imported from TS and vice versa
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "noEmit": true,
+    "outDir": "dist",
+    "stripInternal": true,
+    "rewriteRelativeImportExtensions": true,
+    // Use correct ESM import behavior
+    "esModuleInterop": true,
+    // Disallow features that require cross-file awareness
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true
+    // ### END OF https://tsx.is/typescript#recommendation ###
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "**/dist",
+    "**/node_modules"
+  ]
 }
