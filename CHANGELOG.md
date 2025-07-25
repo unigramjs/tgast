@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0-alpha.1] - 2025-07-25
+
+### Added
+
+- `InlineEntity` and `InlineEntityMap` for any node that represents an inline entity. ([#14])
+- `StyleEntity` and `StyleEntityMap` for for any node that applies inline text styling. ([#14])
+
+### Changed
+
+- **Breaking:** Update `children` property types for all nodes. ([#14])
+- `ExpandableBlockquote` and `Code` are now included in `BlockContentMap`. ([#14])
+- **Breaking:** Change `BotCommand`, `Cashtag`, `CustomEmoji`, `Email`, `Hashtag`, `Mention`, `PhoneNumber`, `Pre`, `TextLink`, `TextMention`, and `Url` to extend `Parent` instead of `Literal`. ([#14])
+
+### Removed
+
+- **Breaking:** Drop support for `PhrasingContent` and `PhrasingContentMap`. ([#14])
+
 ## [2.0.0] - 2025-07-16
 
 ### Added
@@ -120,19 +137,21 @@ and this project adheres to
 
 - Initial release.
 
-[2.0.0]: https://github.com/quadratz/tgast/compare/v1.2.5...v2.0.0
-[2.0.0-alpha.2]: https://github.com/quadratz/tgast/compare/v2.0.0-alpha.1...v2.0.0-alpha.2
-[2.0.0-alpha.1]: https://github.com/quadratz/tgast/compare/v1.2.5...v2.0.0-alpha.1
-[1.2.5]: https://github.com/quadratz/tgast/compare/v1.2.4...v1.2.5
-[1.2.4]: https://github.com/quadratz/tgast/compare/v1.2.3...v1.2.4
-[1.2.3]: https://github.com/quadratz/tgast/compare/v1.2.2...v1.2.3
-[1.2.2]: https://github.com/quadratz/tgast/compare/v1.2.1...v1.2.2
-[1.2.1]: https://github.com/quadratz/tgast/compare/v1.2.0...v1.2.1
-[1.2.0]: https://github.com/quadratz/tgast/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/quadratz/tgast/compare/v1.0.2...v1.1.0
-[1.0.2]: https://github.com/quadratz/tgast/compare/v1.0.1...v1.0.2
-[1.0.1]: https://github.com/quadratz/tgast/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/quadratz/tgast/releases/tag/v1.0.0
-[#1]: https://github.com/quadratz/tgast/pull/1
-[#3]: https://github.com/quadratz/tgast/pull/3
-[#7]: https://github.com/quadratz/tgast/pull/7
+[3.0.0-alpha.1]: https://github.com/tgast-ecosystem/tgast/compare/v2.0.0...v3.0.0-alpha.1
+[2.0.0]: https://github.com/tgast-ecosystem/tgast/compare/v1.2.5...v2.0.0
+[2.0.0-alpha.2]: https://github.com/tgast-ecosystem/tgast/compare/v2.0.0-alpha.1...v2.0.0-alpha.2
+[2.0.0-alpha.1]: https://github.com/tgast-ecosystem/tgast/compare/v1.2.5...v2.0.0-alpha.1
+[1.2.5]: https://github.com/tgast-ecosystem/tgast/compare/v1.2.4...v1.2.5
+[1.2.4]: https://github.com/tgast-ecosystem/tgast/compare/v1.2.3...v1.2.4
+[1.2.3]: https://github.com/tgast-ecosystem/tgast/compare/v1.2.2...v1.2.3
+[1.2.2]: https://github.com/tgast-ecosystem/tgast/compare/v1.2.1...v1.2.2
+[1.2.1]: https://github.com/tgast-ecosystem/tgast/compare/v1.2.0...v1.2.1
+[1.2.0]: https://github.com/tgast-ecosystem/tgast/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/tgast-ecosystem/tgast/compare/v1.0.2...v1.1.0
+[1.0.2]: https://github.com/tgast-ecosystem/tgast/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/tgast-ecosystem/tgast/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/tgast-ecosystem/tgast/releases/tag/v1.0.0
+[#1]: https://github.com/tgast-ecosystem/tgast/pull/1
+[#3]: https://github.com/tgast-ecosystem/tgast/pull/3
+[#7]: https://github.com/tgast-ecosystem/tgast/pull/7
+[#14]: https://github.com/tgast-ecosystem/tgast/pull/14
