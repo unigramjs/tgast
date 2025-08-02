@@ -2,8 +2,8 @@
 // https://github.com/tgast-ecosystem/tgast
 
 import type { Data, Parent } from '../../abstract.ts'
-import type { Text } from '../../nodes/text.ts'
-import type { StyleEntity } from '../../registries/style-content.ts'
+import type { Style } from '../../registries/style.ts'
+import type { Text } from '../text.ts'
 
 /**
  * Extra data for {@linkcode Email} nodes.
@@ -21,7 +21,7 @@ export interface Email extends Parent {
   /**
    * Content of the email address text.
    */
-  children: Array<StyleEntity | Text>
+  children: Array<Style | Text>
   /**
    * Extra data.
    */

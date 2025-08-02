@@ -16,17 +16,14 @@ import type { TextLink } from '../nodes/entities/text-link.ts'
 import type { TextMention } from '../nodes/entities/text-mention.ts'
 import type { Underline } from '../nodes/entities/underline.ts'
 import type { Url } from '../nodes/entities/url.ts'
-import type { Text } from '../nodes/text.ts'
-// eslint-disable-next-line unused-imports/no-unused-imports
-import type { BlockContent } from '../registries/block-content.ts'
 
 /**
- * Registry of {@linkcode InlineEntity} node types.
+ * Registry of {@linkcode NonBlock} node types.
  *
- * This interface can be extended to include custom node types. For a combined
- * type representing all inline entity nodes, see {@linkcode InlineEntity}.
+ * This interface can be extended to include custom node types in this registry.
+ * For a combined type of all non-block content nodes, see {@linkcode NonBlock}.
  */
-export interface InlineEntityMap {
+export interface NonBlockMap {
   bold: Bold
   bot_command: BotCommand
   cashtag: Cashtag
@@ -38,7 +35,6 @@ export interface InlineEntityMap {
   phone_number: PhoneNumber
   spoiler: Spoiler
   strikethrough: Strikethrough
-  text: Text
   text_link: TextLink
   text_mention: TextMention
   underline: Underline
@@ -46,11 +42,12 @@ export interface InlineEntityMap {
 }
 
 /**
- * Type for any tgast node that represents an inline entity, excluding
- * {@linkcode BlockContent block-style} nodes.
+ * Type for any tgast node that is not part of block content.
  *
- * To use a custom tgast node as an inline entity, add it to the
- * {@linkcode InlineEntityMap}. It will then automatically become part of this
- * type.
+ * This includes all entities but `code`, `pre`, `blockquote`, and
+ * `expandable_blockquote`.
+ *
+ * To use custom tgast nodes as non-block content, they must be added to the
+ * {@linkcode NonBlockMap}. Then they are automatically part of this type.
  */
-export type InlineEntity = InlineEntityMap[keyof InlineEntityMap]
+export type NonBlock = NonBlockMap[keyof NonBlockMap]

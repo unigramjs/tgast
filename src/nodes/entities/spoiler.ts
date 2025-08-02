@@ -2,7 +2,8 @@
 // https://github.com/tgast-ecosystem/tgast
 
 import type { Data, Parent } from '../../abstract.ts'
-import type { InlineEntity } from '../../registries/inline-entity.ts'
+import type { NonBlock } from '../../registries/non-block.ts'
+import type { Text } from '../text.ts'
 
 /**
  * Extra data for {@linkcode Spoiler} nodes.
@@ -20,7 +21,7 @@ export interface Spoiler extends Parent {
   /**
    * Content of the spoiler.
    */
-  children: Exclude<InlineEntity, Spoiler>[]
+  children: Array<NonBlock | Text>
   /**
    * Extra data.
    */

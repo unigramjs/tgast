@@ -2,7 +2,8 @@
 // https://github.com/tgast-ecosystem/tgast
 
 import type { Data, Parent } from '../../abstract.ts'
-import type { InlineEntity } from '../../registries/inline-entity.ts'
+import type { Inline } from '../../registries/inline.ts'
+import type { Text } from '../text.ts'
 
 /**
  * Extra data for {@linkcode ExpandableBlockquote} nodes.
@@ -20,7 +21,7 @@ export interface ExpandableBlockquote extends Parent {
   /**
    * Content of the blockquote.
    */
-  children: InlineEntity[]
+  children: Array<Inline | Text>
   /**
    * Extra data.
    */

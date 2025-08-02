@@ -8,13 +8,13 @@ import type { Strikethrough } from '../nodes/entities/strikethrough.ts'
 import type { Underline } from '../nodes/entities/underline.ts'
 
 /**
- * Registry of {@linkcode StyleEntity} node types.
+ * Registry of {@linkcode Style} node types.
  *
  * This interface can be extended to register additional custom inline style
- * nodes. For a combined type representing all inline-styled content nodes, see
- * {@linkcode StyleEntity}.
+ * nodes. For a combined type representing all styled content nodes, see
+ * {@linkcode Style}.
  */
-export interface StyleEntityMap {
+export interface StyleMap {
   bold: Bold
   italic: Italic
   spoiler: Spoiler
@@ -23,9 +23,9 @@ export interface StyleEntityMap {
 }
 
 /**
- * Type for any tgast node that applies inline text styling.
+ * Type for any tgast node that applies text styling.
  *
- * To include custom inline style nodes in this type, add them to
- * {@linkcode StyleEntityMap}. They will be automatically included.
+ * To include custom style nodes in this type, add them to
+ * {@linkcode StyleMap}. They will be automatically included.
  */
-export type StyleEntity = StyleEntityMap[keyof StyleEntityMap]
+export type Style = StyleMap[keyof StyleMap]
