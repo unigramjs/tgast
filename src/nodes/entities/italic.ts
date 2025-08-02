@@ -20,7 +20,7 @@ export interface Italic extends Parent {
   /**
    * Content of the italic text.
    */
-  children: Exclude<InlineEntity, Italic>[]
+  children: InlineEntity[]
   /**
    * Extra data.
    */

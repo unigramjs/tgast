@@ -20,7 +20,7 @@ export interface Bold extends Parent {
   /**
    * Content of the bold text.
    */
-  children: Exclude<InlineEntity, Bold>[]
+  children: InlineEntity[]
   /**
    * Extra data.
    */

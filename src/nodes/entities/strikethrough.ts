@@ -20,7 +20,7 @@ export interface Strikethrough extends Parent {
   /**
    * Content of the strikethrough text.
    */
-  children: Exclude<InlineEntity, Strikethrough>[]
+  children: InlineEntity[]
   /**
    * Extra data.
    */

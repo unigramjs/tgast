@@ -20,7 +20,7 @@ export interface Spoiler extends Parent {
   /**
    * Content of the spoiler.
    */
-  children: Exclude<InlineEntity, Spoiler>[]
+  children: InlineEntity[]
   /**
    * Extra data.
    */

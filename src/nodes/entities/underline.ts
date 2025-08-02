@@ -20,7 +20,7 @@ export interface Underline extends Parent {
   /**
    * Content of the underlined text.
    */
-  children: Exclude<InlineEntity, Underline>[]
+  children: InlineEntity[]
   /**
    * Extra data.
    */
