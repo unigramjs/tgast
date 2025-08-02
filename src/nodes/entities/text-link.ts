@@ -2,8 +2,8 @@
 // https://github.com/tgast-ecosystem/tgast
 
 import type { Data, Parent } from '../../abstract.ts'
-import type { Text } from '../../nodes/text.ts'
-import type { StyleEntity } from '../../registries/style-content.ts'
+import type { Style } from '../../registries/style.ts'
+import type { Text } from '../text.ts'
 
 /**
  * Extra data for {@linkcode TextLink} nodes.
@@ -25,7 +25,7 @@ export interface TextLink extends Parent {
   /**
    * Content of the text URL.
    */
-  children: Array<StyleEntity | Text>
+  children: Array<Style | Text>
   /**
    * Extra data.
    */

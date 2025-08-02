@@ -3,8 +3,8 @@
 
 import type { Data, Parent } from '../../abstract.ts'
 import type { User } from '../../message.ts'
-import type { Text } from '../../nodes/text.ts'
-import type { StyleEntity } from '../../registries/style-content.ts'
+import type { Style } from '../../registries/style.ts'
+import type { Text } from '../text.ts'
 
 /**
  * Extra data for {@linkcode TextMention} nodes.
@@ -26,7 +26,7 @@ export interface TextMention extends Parent {
   /**
    * Content of the text mention text.
    */
-  children: Array<StyleEntity | Text>
+  children: Array<Style | Text>
   /**
    * Extra data.
    */
