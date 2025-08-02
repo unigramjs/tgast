@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0-alpha.2] - 2025-08-02
+
+### Added
+
+- `Inline`, `InlineMap`, `NonBlock`, `NonBlockMap`, `Style`, and `StyleMap`. ([#15])
+
+### Changed
+
+- Nesting rules for all entities. ([#15])
+
+### Removed
+
+- `BlockContent`, `BlockContentMap`, `InlineEntity`, `InlineEntityMap`, `StyleEntity`, and `StyleEntityMap`. ([#15])
+
 ## [3.0.0-alpha.1] - 2025-07-25
 
 ### Added
@@ -137,6 +151,7 @@ and this project adheres to
 
 - Initial release.
 
+[3.0.0-alpha.2]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.1...v3.0.0-alpha.2
 [3.0.0-alpha.1]: https://github.com/tgast-ecosystem/tgast/compare/v2.0.0...v3.0.0-alpha.1
 [2.0.0]: https://github.com/tgast-ecosystem/tgast/compare/v1.2.5...v2.0.0
 [2.0.0-alpha.2]: https://github.com/tgast-ecosystem/tgast/compare/v2.0.0-alpha.1...v2.0.0-alpha.2
@@ -155,3 +170,4 @@ and this project adheres to
 [#3]: https://github.com/tgast-ecosystem/tgast/pull/3
 [#7]: https://github.com/tgast-ecosystem/tgast/pull/7
 [#14]: https://github.com/tgast-ecosystem/tgast/pull/14
+[#15]: https://github.com/tgast-ecosystem/tgast/pull/15
