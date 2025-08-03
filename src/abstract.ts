@@ -105,7 +105,7 @@ export type Literals = Extract<Nodes, Literal>
 /**
  * Union type of all registered tgast {@linkcode Parent} node types.
  *
- * To register custom tgast node types, addition to {@link RootContentMap} and
+ * To register custom tgast node types, addition to {@linkcode RootContentMap} and
  * other relevant places is necessary. They will be automatically
  * added here.
  */
