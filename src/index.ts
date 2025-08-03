@@ -41,6 +41,7 @@ export type { TextMention, TextMentionData } from './nodes/entities/text-mention
 export type { Underline, UnderlineData } from './nodes/entities/underline.ts'
 export type { Url, UrlData } from './nodes/entities/url.ts'
 
+export type { Paragraph, ParagraphData } from './nodes/paragraph.ts'
 export type { Root, RootData } from './nodes/root.ts'
 export type { Text, TextData } from './nodes/text.ts'
 

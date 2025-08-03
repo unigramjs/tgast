@@ -20,6 +20,7 @@ import type { TextLink } from '../nodes/entities/text-link.ts'
 import type { TextMention } from '../nodes/entities/text-mention.ts'
 import type { Underline } from '../nodes/entities/underline.ts'
 import type { Url } from '../nodes/entities/url.ts'
+import type { Paragraph } from '../nodes/paragraph.ts'
 // eslint-disable-next-line unused-imports/no-unused-imports
 import type { Root } from '../nodes/root.ts'
 import type { Text } from '../nodes/text.ts'
@@ -42,6 +43,7 @@ export interface RootContentMap {
   hashtag: Hashtag
   italic: Italic
   mention: Mention
+  paragraph: Paragraph
   phone_number: PhoneNumber
   pre: Pre
   spoiler: Spoiler
