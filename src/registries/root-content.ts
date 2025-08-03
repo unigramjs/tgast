@@ -24,6 +24,7 @@ import type { Paragraph } from '../nodes/paragraph.ts'
 // eslint-disable-next-line unused-imports/no-unused-imports
 import type { Root } from '../nodes/root.ts'
 import type { Text } from '../nodes/text.ts'
+import type { Unknown } from '../nodes/unknown.ts'
 
 /**
  * Registry of {@linkcode Root} child node types.
@@ -52,6 +53,7 @@ export interface RootContentMap {
   text_link: TextLink
   text_mention: TextMention
   underline: Underline
+  unknown: Unknown
   url: Url
 }
 
