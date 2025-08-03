@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0-alpha.3] - 2025-08-03
+
+### Added
+
+- `Paragraph` node for a paragraph block. ([#19])
+
+  Paragraphs are text separated by two or more consecutive newline
+  characters (`\n`). This corresponds to paragraph representations in other 
+  ASTs (like [mdast] or [hast]).
+
+- `Unknown` node for any node not defined in the tgast spec, including
+  unknown Telegram entity types. ([#20])
+
 ## [3.0.0-alpha.2] - 2025-08-02
 
 ### Added
@@ -151,6 +164,7 @@ and this project adheres to
 
 - Initial release.
 
+[3.0.0-alpha.3]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.2...v3.0.0-alpha.3
 [3.0.0-alpha.2]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.1...v3.0.0-alpha.2
 [3.0.0-alpha.1]: https://github.com/tgast-ecosystem/tgast/compare/v2.0.0...v3.0.0-alpha.1
 [2.0.0]: https://github.com/tgast-ecosystem/tgast/compare/v1.2.5...v2.0.0
@@ -166,8 +180,14 @@ and this project adheres to
 [1.0.2]: https://github.com/tgast-ecosystem/tgast/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/tgast-ecosystem/tgast/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/tgast-ecosystem/tgast/releases/tag/v1.0.0
+
 [#1]: https://github.com/tgast-ecosystem/tgast/pull/1
 [#3]: https://github.com/tgast-ecosystem/tgast/pull/3
 [#7]: https://github.com/tgast-ecosystem/tgast/pull/7
 [#14]: https://github.com/tgast-ecosystem/tgast/pull/14
 [#15]: https://github.com/tgast-ecosystem/tgast/pull/15
+[#19]: https://github.com/tgast-ecosystem/tgast/pull/19
+[#20]: https://github.com/tgast-ecosystem/tgast/pull/20
+
+[mdast]: https://github.com/syntax-tree/mdast?tab=readme-ov-file#paragraph
+[hast]: https://github.com/syntax-tree/hast
