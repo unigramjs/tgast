@@ -44,6 +44,7 @@ export type { Url, UrlData } from './nodes/entities/url.ts'
 export type { Paragraph, ParagraphData } from './nodes/paragraph.ts'
 export type { Root, RootData } from './nodes/root.ts'
 export type { Text, TextData } from './nodes/text.ts'
+export type { Unknown, UnknownData } from './nodes/unknown.ts'
 
 export type { Inline, InlineMap } from './registries/inline.ts'
 export type { NonBlock, NonBlockMap } from './registries/non-block.ts'
