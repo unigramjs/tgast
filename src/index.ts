@@ -20,7 +20,7 @@
 
 export type { Data, Literal, Literals, Node, Nodes, Parent, Parents } from './abstract.ts'
 export type { User } from './message.ts'
-
+export type { Break, BreakData } from './nodes/break.ts'
 export type { Blockquote, BlockquoteData } from './nodes/entities/blockquote.ts'
 export type { Bold, BoldData } from './nodes/entities/bold.ts'
 export type { BotCommand, BotCommandData } from './nodes/entities/bot-command.ts'
@@ -40,12 +40,10 @@ export type { TextLink, TextLinkData } from './nodes/entities/text-link.ts'
 export type { TextMention, TextMentionData } from './nodes/entities/text-mention.ts'
 export type { Underline, UnderlineData } from './nodes/entities/underline.ts'
 export type { Url, UrlData } from './nodes/entities/url.ts'
-
 export type { Paragraph, ParagraphData } from './nodes/paragraph.ts'
 export type { Root, RootData } from './nodes/root.ts'
 export type { Text, TextData } from './nodes/text.ts'
 export type { Unknown, UnknownData } from './nodes/unknown.ts'
-
 export type { Inline, InlineMap } from './registries/inline.ts'
 export type { NonBlock, NonBlockMap } from './registries/non-block.ts'
 export type { RootContent, RootContentMap } from './registries/root-content.ts'
