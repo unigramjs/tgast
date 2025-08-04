@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0-alpha.4] - 2025-08-04
+
+### Added
+
+- `Break` node for line breaks (`\n`) in text. ([#23])
+
 ## [3.0.0-alpha.3] - 2025-08-03
 
 ### Added
@@ -164,6 +170,7 @@ and this project adheres to
 
 - Initial release.
 
+[3.0.0-alpha.4]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.3...v3.0.0-alpha.4
 [3.0.0-alpha.3]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.2...v3.0.0-alpha.3
 [3.0.0-alpha.2]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.1...v3.0.0-alpha.2
 [3.0.0-alpha.1]: https://github.com/tgast-ecosystem/tgast/compare/v2.0.0...v3.0.0-alpha.1
@@ -188,6 +195,7 @@ and this project adheres to
 [#15]: https://github.com/tgast-ecosystem/tgast/pull/15
 [#19]: https://github.com/tgast-ecosystem/tgast/pull/19
 [#20]: https://github.com/tgast-ecosystem/tgast/pull/20
+[#23]: https://github.com/tgast-ecosystem/tgast/pull/23
 
 [mdast]: https://github.com/syntax-tree/mdast?tab=readme-ov-file#paragraph
 [hast]: https://github.com/syntax-tree/hast
