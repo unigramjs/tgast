@@ -2,6 +2,7 @@
 // https://github.com/tgast-ecosystem/tgast
 
 import type { Data, Parent } from '../abstract.ts'
+import type { Text } from '../nodes/text.ts'
 import type { Style } from '../registries/style.ts'
 
 /**
@@ -41,7 +42,7 @@ export interface Break extends Parent {
   /**
    * Content of the break.
    */
-  children: Style[]
+  children: Array<Style | Text>
   /**
    * Extra data.
    */
