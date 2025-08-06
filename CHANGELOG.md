@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0-alpha.5] - 2025-08-06
+
+### Fixed
+
+- Include `Text` node to `Break` node children. ([#25])
+
 ## [3.0.0-alpha.4] - 2025-08-04
 
 ### Added
@@ -170,6 +176,7 @@ and this project adheres to
 
 - Initial release.
 
+[3.0.0-alpha.5]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.4...v3.0.0-alpha.5
 [3.0.0-alpha.4]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.3...v3.0.0-alpha.4
 [3.0.0-alpha.3]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.2...v3.0.0-alpha.3
 [3.0.0-alpha.2]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.1...v3.0.0-alpha.2
@@ -196,6 +203,7 @@ and this project adheres to
 [#19]: https://github.com/tgast-ecosystem/tgast/pull/19
 [#20]: https://github.com/tgast-ecosystem/tgast/pull/20
 [#23]: https://github.com/tgast-ecosystem/tgast/pull/23
+[#25]: https://github.com/tgast-ecosystem/tgast/pull/25
 
 [mdast]: https://github.com/syntax-tree/mdast?tab=readme-ov-file#paragraph
 [hast]: https://github.com/syntax-tree/hast
