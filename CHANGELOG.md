@@ -10,7 +10,7 @@ and this project adheres to
 
 ### Removed
 
-- **BREAKING!**: `Break` node and `Paragraph` node. ([#26])
+- **BREAKING!**: `Break` node and `Paragraph` node. ([#27])
 
 ## [3.0.0-alpha.5] - 2025-08-06
 
@@ -211,7 +211,7 @@ and this project adheres to
 [#20]: https://github.com/tgast-ecosystem/tgast/pull/20
 [#23]: https://github.com/tgast-ecosystem/tgast/pull/23
 [#25]: https://github.com/tgast-ecosystem/tgast/pull/25
-[#26]: https://github.com/tgast-ecosystem/tgast/pull/26
+[#27]: https://github.com/tgast-ecosystem/tgast/pull/27
 
 [mdast]: https://github.com/syntax-tree/mdast?tab=readme-ov-file#paragraph
 [hast]: https://github.com/syntax-tree/hast
