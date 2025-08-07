@@ -19,8 +19,7 @@ export interface Unknown extends Parent {
   /**
    * Extra data.
    *
-   * If this node represents a Telegram entity type, all extra properties are
-   * stored in this `data` property.
+   * Entity properties go in `data.entity`.
    */
   data?: UnknownData
 }
@@ -28,4 +27,16 @@ export interface Unknown extends Parent {
 /**
  * Optional extra data for {@linkcode Unknown} nodes.
  */
-export interface UnknownData extends Data { }
+export interface UnknownData extends Data {
+  /**
+   * Original Telegram message entity.
+   *
+   * All extra properties are stored here.
+   */
+  entity: {
+    /** Entity type. */
+    type: string
+    /** Extra entity properties. */
+    [key: string]: unknown
+  }
+}
