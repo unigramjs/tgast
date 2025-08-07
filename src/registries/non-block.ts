@@ -1,7 +1,6 @@
 // Telegram Abstract Syntax Tree (tgast)
 // https://github.com/tgast-ecosystem/tgast
 
-import type { Break } from '../nodes/break.ts'
 import type { Bold } from '../nodes/entities/bold.ts'
 import type { BotCommand } from '../nodes/entities/bot-command.ts'
 import type { Cashtag } from '../nodes/entities/cashtag.ts'
@@ -27,7 +26,6 @@ import type { Url } from '../nodes/entities/url.ts'
 export interface NonBlockMap {
   bold: Bold
   bot_command: BotCommand
-  break: Break
   cashtag: Cashtag
   custom_emoji: CustomEmoji
   email: Email

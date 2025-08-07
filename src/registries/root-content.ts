@@ -1,7 +1,6 @@
 // Telegram Abstract Syntax Tree (tgast)
 // https://github.com/tgast-ecosystem/tgast
 
-import type { Break } from '../nodes/break.ts'
 import type { Blockquote } from '../nodes/entities/blockquote.ts'
 import type { Bold } from '../nodes/entities/bold.ts'
 import type { BotCommand } from '../nodes/entities/bot-command.ts'
@@ -21,7 +20,6 @@ import type { TextLink } from '../nodes/entities/text-link.ts'
 import type { TextMention } from '../nodes/entities/text-mention.ts'
 import type { Underline } from '../nodes/entities/underline.ts'
 import type { Url } from '../nodes/entities/url.ts'
-import type { Paragraph } from '../nodes/paragraph.ts'
 // eslint-disable-next-line unused-imports/no-unused-imports
 import type { Root } from '../nodes/root.ts'
 import type { Text } from '../nodes/text.ts'
@@ -37,7 +35,6 @@ export interface RootContentMap {
   blockquote: Blockquote
   bold: Bold
   bot_command: BotCommand
-  break: Break
   cashtag: Cashtag
   code: Code
   custom_emoji: CustomEmoji
@@ -46,7 +43,6 @@ export interface RootContentMap {
   hashtag: Hashtag
   italic: Italic
   mention: Mention
-  paragraph: Paragraph
   phone_number: PhoneNumber
   pre: Pre
   spoiler: Spoiler
