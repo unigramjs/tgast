@@ -1,5 +1,5 @@
 // Telegram Abstract Syntax Tree (tgast)
-// https://github.com/tgast-ecosystem/tgast
+// https://github.com/unigramjs/tgast
 
 import type { Bold } from '../nodes/entities/bold.ts'
 import type { BotCommand } from '../nodes/entities/bot-command.ts'

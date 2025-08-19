@@ -1,5 +1,5 @@
 // Telegram Abstract Syntax Tree (tgast)
-// https://github.com/tgast-ecosystem/tgast
+// https://github.com/unigramjs/tgast
 
 import type { Data, Literal } from '../abstract.ts'
 
