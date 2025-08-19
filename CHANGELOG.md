@@ -6,12 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [3.0.0-alpha.8] - 2025-08-19
 
 ### Changed
 
-- **BREAKING:** `CustomEmoji` was changed from a `Parent` to a `Literal`. It no longer has a `children` property.
-- **BREAKING:** The `entity` property on `Unknown.data` is now optional.
+- **BREAKING:** `CustomEmoji` was changed from a `Parent` to a `Literal`. It no longer has a `children` property. ([#32])
+- **BREAKING:** The `entity` property on `Unknown.data` is now optional. ([#31])
 
 ## [3.0.0-alpha.7] - 2025-08-07
 
@@ -195,6 +195,7 @@ and this project adheres to
 
 - Initial release.
 
+[3.0.0-alpha.8]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.7...v3.0.0-alpha.8
 [3.0.0-alpha.7]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.6...v3.0.0-alpha.7
 [3.0.0-alpha.6]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.5...v3.0.0-alpha.6
 [3.0.0-alpha.5]: https://github.com/tgast-ecosystem/tgast/compare/v3.0.0-alpha.4...v3.0.0-alpha.5
@@ -227,6 +228,8 @@ and this project adheres to
 [#25]: https://github.com/tgast-ecosystem/tgast/pull/25
 [#27]: https://github.com/tgast-ecosystem/tgast/pull/27
 [#29]: https://github.com/tgast-ecosystem/tgast/pull/29
+[#31]: https://github.com/tgast-ecosystem/tgast/pull/31
+[#32]: https://github.com/tgast-ecosystem/tgast/pull/32
 
 [mdast]: https://github.com/syntax-tree/mdast?tab=readme-ov-file#paragraph
 [hast]: https://github.com/syntax-tree/hast
