@@ -46,4 +46,3 @@ export type { Inline, InlineMap } from './registries/inline.ts'
 export type { NonBlock, NonBlockMap } from './registries/non-block.ts'
 export type { RootContent, RootContentMap } from './registries/root-content.ts'
 export type { Style, StyleMap } from './registries/style.ts'
-
