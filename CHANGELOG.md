@@ -10,6 +10,7 @@ and this project adheres to
 
 ### Changed
 
+- **BREAKING:** `CustomEmoji` was changed from a `Parent` to a `Literal`. It no longer has a `children` property.
 - **BREAKING:** The `entity` property on `Unknown.data` is now optional.
 
 ## [3.0.0-alpha.7] - 2025-08-07
