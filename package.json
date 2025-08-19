@@ -10,14 +10,14 @@
     "url": "https://t.me/quadratz"
   },
   "license": "MIT",
-  "homepage": "https://github.com/tgast-ecosystem/tgast",
+  "homepage": "https://github.com/unigramjs/tgast",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tgast-ecosystem/tgast.git"
+    "url": "git+https://github.com/unigramjs/tgast.git"
   },
   "bugs": {
     "email": "quadratz@proton.me",
-    "url": "https://github.com/tgast-ecosystem/tgast/issues"
+    "url": "https://github.com/unigramjs/tgast/issues"
   },
   "keywords": [
     "telegram",

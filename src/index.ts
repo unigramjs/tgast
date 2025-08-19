@@ -7,10 +7,10 @@
  *
  * tgast is primarily used in [regram] ecosystems.
  *
- * @see https://github.com/tgast-ecosystem/tgast
+ * @see https://github.com/unigramjs/tgast
  *
  * [ast]: https://unifiedjs.com/learn/guide/introduction-to-syntax-trees/
- * [regram]: https://github.com/tgast-ecosystem/regram
+ * [regram]: https://github.com/unigramjs/regram
  * [tg-entity]: https://core.telegram.org/bots/api#messageentity
  * [unified]: https://github.com/unifiedjs/unified
  * [unist]: https://github.com/syntax-tree/unist
