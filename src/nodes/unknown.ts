@@ -33,7 +33,7 @@ export interface UnknownData extends Data {
    *
    * All extra properties are stored here.
    */
-  entity: {
+  entity?: {
     /** Entity type. */
     type: string
     /** Extra entity properties. */
