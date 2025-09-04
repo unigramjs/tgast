@@ -1,6 +1,3 @@
-// Telegram Abstract Syntax Tree (tgast)
-// https://github.com/unigramjs/tgast
-
 import type { Blockquote } from '../nodes/entities/blockquote.ts'
 import type { Bold } from '../nodes/entities/bold.ts'
 import type { BotCommand } from '../nodes/entities/bot-command.ts'
@@ -20,7 +17,7 @@ import type { TextLink } from '../nodes/entities/text-link.ts'
 import type { TextMention } from '../nodes/entities/text-mention.ts'
 import type { Underline } from '../nodes/entities/underline.ts'
 import type { Url } from '../nodes/entities/url.ts'
-// eslint-disable-next-line unused-imports/no-unused-imports
+// biome-ignore lint/correctness/noUnusedImports: Used in comments.
 import type { Root } from '../nodes/root.ts'
 import type { Text } from '../nodes/text.ts'
 import type { Unknown } from '../nodes/unknown.ts'
@@ -32,27 +29,27 @@ import type { Unknown } from '../nodes/unknown.ts'
  * For type of {@linkcode Root} child nodes, see {@linkcode RootContent}.
  */
 export interface RootContentMap {
-  blockquote: Blockquote
-  bold: Bold
-  bot_command: BotCommand
-  cashtag: Cashtag
-  code: Code
-  custom_emoji: CustomEmoji
-  email: Email
-  expandable_blockquote: ExpandableBlockquote
-  hashtag: Hashtag
-  italic: Italic
-  mention: Mention
-  phone_number: PhoneNumber
-  pre: Pre
-  spoiler: Spoiler
-  strikethrough: Strikethrough
-  text: Text
-  text_link: TextLink
-  text_mention: TextMention
-  underline: Underline
-  unknown: Unknown
-  url: Url
+	blockquote: Blockquote
+	bold: Bold
+	bot_command: BotCommand
+	cashtag: Cashtag
+	code: Code
+	custom_emoji: CustomEmoji
+	email: Email
+	expandable_blockquote: ExpandableBlockquote
+	hashtag: Hashtag
+	italic: Italic
+	mention: Mention
+	phone_number: PhoneNumber
+	pre: Pre
+	spoiler: Spoiler
+	strikethrough: Strikethrough
+	text: Text
+	text_link: TextLink
+	text_mention: TextMention
+	underline: Underline
+	unknown: Unknown
+	url: Url
 }
 
 /**

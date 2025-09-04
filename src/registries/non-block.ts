@@ -1,6 +1,3 @@
-// Telegram Abstract Syntax Tree (tgast)
-// https://github.com/unigramjs/tgast
-
 import type { Bold } from '../nodes/entities/bold.ts'
 import type { BotCommand } from '../nodes/entities/bot-command.ts'
 import type { Cashtag } from '../nodes/entities/cashtag.ts'
@@ -24,21 +21,21 @@ import type { Url } from '../nodes/entities/url.ts'
  * For a combined type of all non-block content nodes, see {@linkcode NonBlock}.
  */
 export interface NonBlockMap {
-  bold: Bold
-  bot_command: BotCommand
-  cashtag: Cashtag
-  custom_emoji: CustomEmoji
-  email: Email
-  hashtag: Hashtag
-  italic: Italic
-  mention: Mention
-  phone_number: PhoneNumber
-  spoiler: Spoiler
-  strikethrough: Strikethrough
-  text_link: TextLink
-  text_mention: TextMention
-  underline: Underline
-  url: Url
+	bold: Bold
+	bot_command: BotCommand
+	cashtag: Cashtag
+	custom_emoji: CustomEmoji
+	email: Email
+	hashtag: Hashtag
+	italic: Italic
+	mention: Mention
+	phone_number: PhoneNumber
+	spoiler: Spoiler
+	strikethrough: Strikethrough
+	text_link: TextLink
+	text_mention: TextMention
+	underline: Underline
+	url: Url
 }
 
 /**

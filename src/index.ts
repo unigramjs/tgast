@@ -18,25 +18,51 @@
  * @module
  */
 
-export type { Data, Literal, Literals, Node, Nodes, Parent, Parents } from './abstract.ts'
+export type {
+	Data,
+	Literal,
+	Literals,
+	Node,
+	Nodes,
+	Parent,
+	Parents,
+} from './abstract.ts'
 export type { User } from './message.ts'
 export type { Blockquote, BlockquoteData } from './nodes/entities/blockquote.ts'
 export type { Bold, BoldData } from './nodes/entities/bold.ts'
-export type { BotCommand, BotCommandData } from './nodes/entities/bot-command.ts'
+export type {
+	BotCommand,
+	BotCommandData,
+} from './nodes/entities/bot-command.ts'
 export type { Cashtag, CashtagData } from './nodes/entities/cashtag.ts'
 export type { Code, CodeData } from './nodes/entities/code.ts'
-export type { CustomEmoji, CustomEmojiData } from './nodes/entities/custom-emoji.ts'
+export type {
+	CustomEmoji,
+	CustomEmojiData,
+} from './nodes/entities/custom-emoji.ts'
 export type { Email, EmailData } from './nodes/entities/email.ts'
-export type { ExpandableBlockquote, ExpandableBlockquoteData } from './nodes/entities/expandable-blockquote.ts'
+export type {
+	ExpandableBlockquote,
+	ExpandableBlockquoteData,
+} from './nodes/entities/expandable-blockquote.ts'
 export type { Hashtag, HashtagData } from './nodes/entities/hashtag.ts'
 export type { Italic, ItalicData } from './nodes/entities/italic.ts'
 export type { Mention, MentionData } from './nodes/entities/mention.ts'
-export type { PhoneNumber, PhoneNumberData } from './nodes/entities/phone-number.ts'
+export type {
+	PhoneNumber,
+	PhoneNumberData,
+} from './nodes/entities/phone-number.ts'
 export type { Pre, PreData } from './nodes/entities/pre.ts'
 export type { Spoiler, SpoilerData } from './nodes/entities/spoiler.ts'
-export type { Strikethrough, StrikethroughData } from './nodes/entities/strikethrough.ts'
+export type {
+	Strikethrough,
+	StrikethroughData,
+} from './nodes/entities/strikethrough.ts'
 export type { TextLink, TextLinkData } from './nodes/entities/text-link.ts'
-export type { TextMention, TextMentionData } from './nodes/entities/text-mention.ts'
+export type {
+	TextMention,
+	TextMentionData,
+} from './nodes/entities/text-mention.ts'
 export type { Underline, UnderlineData } from './nodes/entities/underline.ts'
 export type { Url, UrlData } from './nodes/entities/url.ts'
 export type { Root, RootData } from './nodes/root.ts'

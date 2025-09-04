@@ -1,12 +1,6 @@
-// Telegram Abstract Syntax Tree (tgast)
-// https://github.com/quadratz/tgast
-
-import type {
-  Data as UnistData,
-  Node as UnistNode,
-} from 'unist'
+import type { Data as UnistData, Node as UnistNode } from 'unist'
 import type { Root } from './nodes/root.ts'
-// eslint-disable-next-line unused-imports/no-unused-imports
+// biome-ignore lint/correctness/noUnusedImports: Used in comments.
 import type { RootContent, RootContentMap } from './registries/root-content.ts'
 
 /**
@@ -30,7 +24,7 @@ import type { RootContent, RootContentMap } from './registries/root-content.ts'
  *
  * [unist]: https://github.com/syntax-tree/unist
  */
-export interface Data extends UnistData { }
+export interface Data extends UnistData {}
 
 /**
  * Base type for all tgast nodes.
@@ -45,10 +39,10 @@ export interface Data extends UnistData { }
  * For a combined type of all registered tgast nodes, see {@linkcode Nodes}.
  */
 export interface Node extends UnistNode {
-  /**
-   * Ecosystem-specific info. Data storage is welcome here.
-   */
-  data?: Data
+	/**
+	 * Ecosystem-specific info. Data storage is welcome here.
+	 */
+	data?: Data
 }
 
 /**
@@ -63,10 +57,10 @@ export interface Node extends UnistNode {
  * see {@linkcode Literals}.
  */
 export interface Literal extends Node {
-  /**
-   * Plain string value of the literal node.
-   */
-  value: string
+	/**
+	 * Plain string value of the literal node.
+	 */
+	value: string
 }
 
 /**
@@ -78,10 +72,10 @@ export interface Literal extends Node {
  * see {@linkcode Parents}.
  */
 export interface Parent extends Node {
-  /**
-   * List of child nodes.
-   */
-  children: RootContent[]
+	/**
+	 * List of child nodes.
+	 */
+	children: RootContent[]
 }
 
 /**

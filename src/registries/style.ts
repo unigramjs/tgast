@@ -1,6 +1,3 @@
-// Telegram Abstract Syntax Tree (tgast)
-// https://github.com/unigramjs/tgast
-
 import type { Bold } from '../nodes/entities/bold.ts'
 import type { Italic } from '../nodes/entities/italic.ts'
 import type { Spoiler } from '../nodes/entities/spoiler.ts'
@@ -15,11 +12,11 @@ import type { Underline } from '../nodes/entities/underline.ts'
  * {@linkcode Style}.
  */
 export interface StyleMap {
-  bold: Bold
-  italic: Italic
-  spoiler: Spoiler
-  strikethrough: Strikethrough
-  underline: Underline
+	bold: Bold
+	italic: Italic
+	spoiler: Spoiler
+	strikethrough: Strikethrough
+	underline: Underline
 }
 
 /**
