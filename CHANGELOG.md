@@ -5,6 +5,31 @@ See [standard-version] for commit guidelines.
 
 [standard-version]: https://github.com/conventional-changelog/standard-version
 
+## v3.0.0-alpha.9
+
+[compare changes](https://github.com/unigramjs/tgast/compare/v3.0.0-alpha.8...v3.0.0-alpha.9)
+
+### 💅 Refactors
+
+- Remove redundant `undefined` value from optional property ([37d3551](https://github.com/unigramjs/tgast/commit/37d3551))
+- ⚠️  Drop support for CommonJS ([ce25392](https://github.com/unigramjs/tgast/commit/ce25392))
+
+### 📖 Documentation
+
+- Add information on extending the interface ([a9d53bb](https://github.com/unigramjs/tgast/commit/a9d53bb))
+
+### 🏡 Chore
+
+- **dev:** Update workspace ([f7ba318](https://github.com/unigramjs/tgast/commit/f7ba318))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Drop support for CommonJS ([ce25392](https://github.com/unigramjs/tgast/commit/ce25392))
+
+### ❤️ Contributors
+
+- Qz ([@quadratz](https://github.com/quadratz))
+
 ## [3.0.0-alpha.8] - 2025-08-19
 
 ### Changed

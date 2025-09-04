@@ -1,6 +1,6 @@
 {
 	"name": "tgast",
-	"version": "3.0.0-alpha.8",
+	"version": "3.0.0-alpha.9",
 	"description": "Telegram Abstract Syntax Tree format.",
 	"type": "module",
 	"license": "MIT",
