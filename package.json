@@ -39,14 +39,11 @@
 		"unigramjs",
 		"unigram.js"
 	],
-	"main": "./dist/index.cjs",
+	"main": "./dist/index.js",
 	"module": "./dist/index.js",
-	"types": "./dist/index.d.cts",
+	"types": "./dist/index.d.ts",
 	"exports": {
-		".": {
-			"import": "./dist/index.js",
-			"require": "./dist/index.cjs"
-		},
+		".": "./dist/index.js",
 		"./package.json": "./package.json"
 	},
 	"publishConfig": {
@@ -66,10 +63,6 @@
 		"build": "tsdown",
 		"check": "tsc --noEmit && biome check",
 		"check:fix": "biome check --write",
-		"test": "vitest run",
-		"test:watch": "vitest watch",
-		"debug:test": "DEBUG='true' vitest run",
-		"debug:test:watch": "DEBUG='true' vitest watch",
 		"release": "changelogen --release",
 		"release:github": "changelogen gh release"
 	},
