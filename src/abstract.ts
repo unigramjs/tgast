@@ -10,13 +10,12 @@ import type { RootContent, RootContentMap } from './registries/root-content.ts'
  * be used by [unist] or tgast itself. This allows for safe use in utilities
  * and plugins to store extra info.
  *
- * This interface can be extended to add custom data types.
+ * This interface can be extended to add custom data types:
  *
  * @example
  * ```ts
  * declare module 'tgast' {
  *   interface Data {
- *     // `someNode.data.myId` will be typed as `number | undefined`
  *     myId?: number
  *   }
  * }
@@ -40,7 +39,9 @@ export interface Data extends UnistData {}
  */
 export interface Node extends UnistNode {
 	/**
-	 * Ecosystem-specific info. Data storage is welcome here.
+	 * Data attachable to tgast nodes.
+	 *
+	 * @see {@linkcode Data}
 	 */
 	data?: Data
 }
@@ -82,8 +83,8 @@ export interface Parent extends Node {
  * Union type of all registered tgast {@linkcode Node} types.
  *
  * To register custom tgast node types, addition to {@linkcode RootContentMap}
- * and other relevant places is necessary. They will be automatically
- * added here.
+ * and other relevant places is necessary. They will be automatically added
+ * here.
  */
 export type Nodes = Root | RootContent
 
@@ -91,16 +92,16 @@ export type Nodes = Root | RootContent
  * Union type of all registered tgast {@linkcode Literal} node types.
  *
  * To register custom tgast node types, addition to {@linkcode RootContentMap}
- * and other relevant places is necessary. They will be automatically
- * added here.
+ * and other relevant places is necessary. They will be automatically added
+ * here.
  */
 export type Literals = Extract<Nodes, Literal>
 
 /**
  * Union type of all registered tgast {@linkcode Parent} node types.
  *
- * To register custom tgast node types, addition to {@linkcode RootContentMap} and
- * other relevant places is necessary. They will be automatically
- * added here.
+ * To register custom tgast node types, addition to {@linkcode RootContentMap}
+ * and other relevant places is necessary. They will be automatically added
+ * here.
  */
 export type Parents = Extract<Nodes, Parent>

@@ -7,8 +7,17 @@ import type { Underline } from '../nodes/entities/underline.ts'
 /**
  * Registry of {@linkcode Style} node types.
  *
- * This interface can be extended to register additional custom inline style
- * nodes. For a combined type representing all styled content nodes, see
+ * This interface can be extended to include custom node types in this registry:
+ *
+ * ```ts
+ * declare module 'tgast' {
+ *   interface StyleMap {
+ *     new_type: NewType;
+ *   }
+ * }
+ * ```
+ *
+ * For a combined type representing all styled content nodes, see
  * {@linkcode Style}.
  */
 export interface StyleMap {

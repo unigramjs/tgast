@@ -18,7 +18,16 @@ import type { Url } from '../nodes/entities/url.ts'
 /**
  * Registry of {@linkcode Inline} node types.
  *
- * This interface can be extended to include custom node types in this registry.
+ * This interface can be extended to include custom node types in this registry:
+ *
+ * ```ts
+ * declare module 'tgast' {
+ *   interface InlineMap {
+ *     new_type: NewType;
+ *   }
+ * }
+ * ```
+ *
  * For a combined type of all inline content nodes, see {@linkcode Inline}.
  */
 export interface InlineMap {

@@ -17,7 +17,16 @@ import type { Url } from '../nodes/entities/url.ts'
 /**
  * Registry of {@linkcode NonBlock} node types.
  *
- * This interface can be extended to include custom node types in this registry.
+ * This interface can be extended to include custom node types in this registry:
+ *
+ * ```ts
+ * declare module 'tgast' {
+ *   interface NonBlockMap {
+ *     new_type: NewType;
+ *   }
+ * }
+ * ```
+ *
  * For a combined type of all non-block content nodes, see {@linkcode NonBlock}.
  */
 export interface NonBlockMap {

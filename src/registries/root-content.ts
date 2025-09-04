@@ -25,7 +25,16 @@ import type { Unknown } from '../nodes/unknown.ts'
 /**
  * Registry of {@linkcode Root} child node types.
  *
- * This interface can be extended to include custom node types in this registry.
+ * This interface can be extended to include custom node types in this registry:
+ *
+ * ```ts
+ * declare module 'tgast' {
+ *   interface RootContentMap {
+ *     new_type: NewType;
+ *   }
+ * }
+ * ```
+ *
  * For type of {@linkcode Root} child nodes, see {@linkcode RootContent}.
  */
 export interface RootContentMap {
