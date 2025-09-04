@@ -18,5 +18,5 @@ export interface Root extends Parent {
 	/**
 	 * Data associated with this root node.
 	 */
-	data?: RootData | undefined
+	data?: RootData
 }
